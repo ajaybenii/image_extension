@@ -5,7 +5,6 @@ from io import BytesIO
 from typing import Optional
 from urllib.parse import urlparse
 
-import numpy as np
 from PIL import Image,ImageEnhance
 from pydantic import BaseModel
 from fastapi import FastAPI,HTTPException
