@@ -1,9 +1,6 @@
 import os
-import json
 from urllib import response
 import aiohttp
-import cv2
-import re
 from io import BytesIO
 from typing import Optional
 from urllib.parse import urlparse
