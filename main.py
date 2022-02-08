@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 from PIL import Image,ImageEnhance
 from pydantic import BaseModel
 from fastapi import FastAPI,HTTPException
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse,PlainTextResponse
  
  
 app = FastAPI(
@@ -62,4 +62,4 @@ async def extension(check_image: URL):
 
 
     extension = result    
-    return extension
+    return PlainTextResponse(extension)
